@@ -4,14 +4,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Toku Infinity</title>
+        <link href="custom.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	</head>
-	<body>
+    </head>
+	<body class="bg-black">
+
+
             <!-------Navbar------->
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger py-5">
+            <div class="container align-items-end">
+
+
             <!-----Title------->
-            <span class="navbar-brand mb-0 h1">Toku Infinity</span>
+            <img class="d-inline-block align-top" src="assets/images/logokr copy.png" width="70" height="70"/>
+            <h1 class=" mb-0 display-1 fw-bolder text-black">Toku Infinity</h1>
+
+
                 <button 
                 type="button" 
                 data-bs-toggle="collapse" 
@@ -23,8 +31,9 @@
                 >
                     Menu
                 </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
+
+
                 <!-------Nav buttons------->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
@@ -57,27 +66,559 @@
         </div>
         </nav>
 
-        <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
-              </div>
-              <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
-              </div>
-              <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
-              </div>
+        <div class="banhead" 
+        style="background-image: url(assets/images/KamenRiders.jpg);">
+            <div class="color-overlay d-flex justify-content-center alignt-items-center">
             </div>
-            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+        </div>
+
+
+
+        <!----- Single Carousel------>
+        <div class="col-12 col-md-10 col-xl-8 offset-xl-2 offset-md-1 pt-5">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+            
+              <div class="carousel-item active">
+                <div class="card mx-auto flex-lg-row bg-black border border-danger rounded-3 border-3 text-light text-center">
+                <img src="assets/images/Showariders.webp" class="d-block w-100" alt="...">
+                <div class="card-body w-lg-100 w-50">
+                    <h2 class="card-title">Showa Riders</h2>
+                    <p class="card-text fw-bolder">From 1971 - 1989</p>
+                </div>
+              </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <div class="card mx-auto flex-lg-row bg-black border border-danger rounded-3 border-3 text-light text-center">
+                <img src="assets/images/Heiseiriders.jpg" class="d-block w-100" alt="...">
+                <div class="card-body w-lg-100 w-50">
+                    <h2 class="card-title">Showa Riders</h2>
+                    <p class="card-text fw-bolder">From 1971 - 1989</p>
+                </div>
+                </div>
+              </div>
+
+
+
+              <div class="carousel-item">
+                <div class="card mx-auto flex-lg-row bg-black border border-danger rounded-3 border-3 text-light text-center">
+                <img src="assets/images/reiwariders2.png" class="d-block w-100" alt="...">
+                <div class="card-body w-lg-100 w-50">
+                    <h2 class="card-title">Showa Riders</h2>
+                    <p class="card-text fw-bolder">From 1971 - 1989</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+
+            <!----Carousel Buttons---->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div>
+
+
+        <!---Showa Multi Carousel----->
+        <div class="bg-success py-5 m-5 rounded-5 p-5">
+            <h1 class="text-center mb-4"> Showa Kamen Riders</h1>
+            <div class="container px-4">
+              <div id="multiCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- First Set of Cards -->
+                  <div class="carousel-item active">
+                    <div class="row g-4">
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h3 class="card-title mb-4 fw-bolder">Kamen Rider Ichigo</h3>
+                            <img src="assets/images/Ichigo.webp" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Kamen rider Ichigo">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h3 class="card-title mb-4 fw-bolder">Kamen Rider V3</h3>
+                            <img src="assets/images/V32.jpg" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Kamen rider V3">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h3 class="card-title mb-4 fw-bolder">Kamen Rider X</h3>
+                            <img src="assets/images/X.webp" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Kamen rider X">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h3 class="card-title mb-4 fw-bolder">Kamen Rider Amazon</h3>
+                            <img src="assets/images/Amazon.webp" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Kamen rider Amazon">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Second Set of Cards -->
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Stronger</h5>
+                            <img src="assets/images/Stronger.webp" class="img-fluid rounded 3" alt="Kamen rider Stronger">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Skyrider</h5>
+                            <img src="assets/images/Skyrider.webp" class="img-fluid rounded 3" alt="Kamen rider Skyrider">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Super-1</h5>
+                            <img src="assets/images/Super-1.webp" class="img-fluid rounded 3" alt="Kamen rider Super-1">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Black/Black RX</h5>
+                            <img src="assets/images/Blackrx.webp" class="img-fluid rounded 3" alt="Kamen rider Black/Black RX">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#multiCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#multiCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+
+        <div class="bg-black py-5">
+            <div class="container px-4">
+              <div id="heiseimultiCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+
+                  <!-- First Set of Cards -->
+                  <div class="carousel-item active">
+                    <div class="row g-4">
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Kuuga</h5>
+                            <img src="assets/images/Kuuga.webp" class="img-fluid rounded 3" alt="Kamen rider Kuuga">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Agito</h5>
+                            <img src="assets/images/Agito.jpeg" class="img-fluid rounded 3" alt="Kamen rider Agito">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Ryuki</h5>
+                            <img src="assets/images/Ryuki.webp" class="img-fluid rounded 3" alt="Kamen rider Ryuki">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Faiz</h5>
+                            <img src="assets/images/Faiz.jpg" class="img-fluid rounded 3" alt="Kamen rider Faiz">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+
+                  <!-- Second Set of Cards -->
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Blade</h5>
+                            <img src="assets/images/Blade.webp" class="img-fluid rounded 3" alt="Kamen rider Blade">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Hibiki</h5>
+                            <img src="assets/images/Hibiki.jpg" class="img-fluid rounded 3" alt="Kamen rider Hibiki">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Kabuto</h5>
+                            <img src="assets/images/Kabuto.webp" class="img-fluid rounded 3" alt="Kamen rider Kabuto">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Den-O</h5>
+                            <img src="assets/images/deno.jpg" class="img-fluid rounded 3" alt="Kamen rider Den-O">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!---Third Set of Cards-->
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Kiva</h5>
+                            <img src="assets/images/kiva.webp" class="img-fluid rounded 3" alt="Kamen rider Kiva">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Decade</h5>
+                            <img src="assets/images/decade.jpg" class="img-fluid rounded 3" alt="Kamen rider Decade">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider W</h5>
+                            <img src="assets/images/Double.webp" class="img-fluid rounded 3" alt="Kamen rider W">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider OOO</h5>
+                            <img src="assets/images/OOO.jpg" class="img-fluid rounded 3" alt="Kamen rider OOO">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!---Fourth Set of Cards----->
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Fourze</h5>
+                            <img src="assets/images/fourze.jpg" class="img-fluid rounded 3" alt="Kamen rider Fourze">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Wizard</h5>
+                            <img src="assets/images/wizard.jpg" class="img-fluid rounded 3" alt="Kamen rider Wizard">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Gaim</h5>
+                            <img src="assets/images/gaim.webp" class="img-fluid rounded 3" alt="Kamen rider Gaim">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card shadow h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Kamen Rider Drive</h5>
+                            <img src="assets/images/Drive.webp" class="img-fluid rounded 3" alt="Kamen rider Drive">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <!---Fifth Set of Cards------>
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                          <div class="col-md-3">
+                            <div class="card shadow h-100">
+                              <div class="card-body">
+                                <h5 class="card-title">Kamen Rider Ghost</h5>
+                                <img src="assets/images/ghost.jpg" class="img-fluid rounded 3" alt="Kamen rider Ghost">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow h-100">
+                              <div class="card-body">
+                                <h5 class="card-title">Kamen Rider Ex-Aid</h5>
+                                <img src="assets/images/exaid.jpg" class="img-fluid rounded 3" alt="Kamen rider Ex-aid">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow h-100">
+                              <div class="card-body">
+                                <h5 class="card-title">Kamen Rider Build</h5>
+                                <img src="assets/images/build.jpg" class="img-fluid rounded 3" alt="Kamen rider Build">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow h-100">
+                              <div class="card-body">
+                                <h5 class="card-title">Kamen Rider Zi-O</h5>
+                                <img src="assets/images/zio.jpg" class="img-fluid rounded 3" alt="Kamen rider Zi-O">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#heiseimultiCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heiseimultiCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="Creator bg-light rounded-3 text-center border border-3 border-danger p-4 col-12 col-md-10 col-xl-8 offset-xl-2 offset-md-1 pt-5">
+            <h2 class="fw-bolder mb-4">Shotaro Ishinomori</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <p>
+                        Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval
+                        and adult forms.
+                    </p>
+                    
+                        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+                    
+                    <p>
+                        Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the
+                        Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and
+                        other small creatures.
+                    </p>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="assets/images/Shotaroishi.png" class="img-fluid rounded-3" alt="Shotaro Ishiminori">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="supersentai text-center mt-5 rounded-3 border border-white bg-primary col-12 col-md-10 col-xl-8 offset-xl-2 offset-md-1 pt-5">
+            <h1 class="text-light"> Super Sentai </h1>
+            <img src="assets/images/Supersentai.webp" class="img-fluid rounded mt-3" alt="Supersentai" width="900" height="900">
+            <div class="ssdesc mt-5 p-4 text-center">
+                <p> The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+                    The value of the alt attribute should describe the image:The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+                    The value of the alt attribute should describe the image:The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+                    The value of the alt attribute should describe the image:The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+                    The value of the alt attribute should describe the image:
+                    </p>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
 
 
 
@@ -120,7 +661,7 @@
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0g6ElQSSPzLcn2s5l/IS/ynj/kVsY9QrczC+Pv3bYa6l6x4F" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 	</body>
 	
