@@ -21,7 +21,7 @@ The multi item carousel contains 8 cards, with 4 being shown at a time. The acti
 
 
 - Dropdown -
-The dropdown menu contains navigation buttons that take you to different points in the page. It is located in the navbar.
+The drop down menu is located above the green carousel
 
 
 - Aside -
@@ -33,3 +33,5 @@ This section is a container with a photo and text. It has rounded corners and it
 
 - Footer -
 The footer is a simple dark footer, that has the logo and two different lines for github and linkedin
+
+https://kevxcyj.github.io/atlas-bootstrap/
