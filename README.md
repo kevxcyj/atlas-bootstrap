@@ -57,6 +57,9 @@ Making the layout responsive without breaking image proportions
 
 - Screenshots -
 
+<img width="1915" height="952" alt="Screenshot 2025-08-21 at 11 07 07 AM" src="https://github.com/user-attachments/assets/f5347efd-9cac-4e37-a0e3-1a31c9166a07" />
+
+
 - Getting Started -
 
 Clone the repository:
