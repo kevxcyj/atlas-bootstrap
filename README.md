@@ -61,8 +61,10 @@ Making the layout responsive without breaking image proportions
 
 Clone the repository:
 
-git clone https://github.com/yourusername/atlas-bootstrap.git
+git clone https://github.com/kevxcyj/atlas-bootstrap.git
 
 
 Open index.html in your browser.
+
+
 https://kevxcyj.github.io/atlas-bootstrap/
